@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modal builder</title>
+        <link rel="stylesheet" href="modal-builder.css"/>
+    </head>
+    <body>
+        <form id="modal-builder-form" action="#">
+
+            <div class="input-group">
+                <label for="modal-title">Modal title: </label>
+                <input type="text" name="modal-title" id="modal-title"/>
+            </div>
+
+            <div class="input-group">
+                <label for="modal-body">Modal body: </label>
+                <input type="text" name="modal-body" id="modal-body"/>
+            </div>
+
+            <div class="input-group">
+                <label for="modal-buttons">Modal buttons (Comma separated list): </label>
+                <input type="text" name="modal-buttons" id="modal-buttons"/>
+            </div>
+
+            <div class="input-group">
+                <input type="submit" name="build-modal" value="Build"/>
+            </div>
+
+        </form>
+
+        <script src="modal-builder.js"></script>
+        <script>
+            ModalBuilder.init("modal-builder-form");
+        </script>
+
+    </body>
+</html>
